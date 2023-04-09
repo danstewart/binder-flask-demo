@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Dan Stewart" />
+
+        <title>Binder Flask Demo</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+        <style>
+            * {
+                font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+            }
+
+            body {
+                width: 60%;
+                margin: auto;
+            }
+
+            .post {
+                min-height: 80px;
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        </style>
+
+        <script type="module">
+            import { registerControllers } from "/static/js/binder/binder.js"
+            import { DynamicFrame } from "/static/js/binder/core/dynamic_frame.js"
+
+            registerControllers(DynamicFrame);
+        </script>
+    </head>
+
+    <body>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>

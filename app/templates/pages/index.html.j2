@@ -1,0 +1,13 @@
+{% extends "layouts/main.html.j2" %}
+
+{% block body %}
+    <h2>Binder Flask Demo</h2>
+
+    {% for user in users %}
+        {% for post in user.posts %}
+            <dynamic-frame :url="/frames/post/1" :render-on-init="1" :contained="1" :state-key="post_{{ post.id }}">
+                {% include '/frames/post.html.j2' %}
+            </dynamic-frame>
+        {% endfor %}
+    {% endfor %}
+{% endblock body %}
