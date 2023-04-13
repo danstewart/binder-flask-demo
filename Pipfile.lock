@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "baa3f606b910dee3a55eed32c4440618a57c2a63923cbc354c6835807aa93887"
+            "sha256": "c733d7e662c5770b75570528d95ac7a088052adf3605b90608d1b13274261141"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.10"
+            "python_version": "3.11"
         },
         "sources": [
             {
@@ -285,11 +285,11 @@
         },
         "djlint": {
             "hashes": [
-                "sha256:0760a8457fd574b5b70edf91dffda10986641f6e0ab4171272ffc55dbf45c553",
-                "sha256:978c0cde69008ea788291e13c3eaf3f7373686622ca58049a1fbb661ffbbb7c9"
+                "sha256:1fca84f80763d909538384e5e2a2e5ab41dd32851ccba90a0432980f19b8de59",
+                "sha256:b59f7364f5f4fe88f8a9d3b14580c473f4ed669e88b730ce6012f0c9be81b3db"
             ],
             "index": "pypi",
-            "version": "==1.19.17"
+            "version": "==1.23.0"
         },
         "editorconfig": {
             "hashes": [
@@ -337,10 +337,10 @@
         },
         "pygments": {
             "hashes": [
-                "sha256:b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297",
-                "sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717"
+                "sha256:77a3299119af881904cd5ecd1ac6a66214b6e9bed1f2db16993b54adede64094",
+                "sha256:f7e36cffc4c517fbc252861b9a6e4644ca0e5abadf9a113c72d1358ad09b9500"
             ],
-            "version": "==2.14.0"
+            "version": "==2.15.0"
         },
         "pyyaml": {
             "hashes": [

@@ -40,4 +40,11 @@ def create_app():
 
         return render_template("frames/post_edit.html.j2", post=post)
 
+    @app.delete("/frames/post/delete/<int:post_id>")
+    def delete_post(post_id: int):
+        post = db.get_or_404(Post, post_id)
+        db.session.delete(post)
+
+        return "", 204
+
     return app

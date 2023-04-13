@@ -6,6 +6,6 @@
 
     <div>
         <button @click.eval="this.loadUrl('/frames/post/edit/{{ post.id }}')">Edit</button>
-        <button @click.eval="this.loadUrl(`/frames/post/delete/{{ post.id }}`)">Delete</button>
+        <button @click.eval="this.loadUrl(`/frames/post/delete/{{ post.id }}`, 'delete')">Delete</button>
     </div>
 </div>
