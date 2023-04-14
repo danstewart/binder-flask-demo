@@ -44,6 +44,7 @@ def create_app():
     def delete_post(post_id: int):
         post = db.get_or_404(Post, post_id)
         db.session.delete(post)
+        db.session.commit()
 
         return "", 204
 
