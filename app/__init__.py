@@ -25,7 +25,7 @@ def create_app():
 
         post = db.get_or_404(Post, post_id)
 
-        return render_template("frames/post.html.j2", post=post)
+        return render_template("frames/post/view.html.j2", post=post)
 
     @app.route("/frames/post/edit/<int:post_id>", methods=["GET", "POST"])
     def edit_post(post_id: int):
@@ -38,7 +38,7 @@ def create_app():
             db.session.commit()
             return redirect("/frames/post/{}".format(post_id))
 
-        return render_template("frames/post_edit.html.j2", post=post)
+        return render_template("frames/post/edit.html.j2", post=post)
 
     @app.delete("/frames/post/delete/<int:post_id>")
     def delete_post(post_id: int):

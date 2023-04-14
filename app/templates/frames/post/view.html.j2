@@ -1,0 +1,27 @@
+<div class="post">
+    <div>
+        <p>{{ post.content }}</p>
+        <a href="/user/{{ post.author.id }}">@{{ post.author.name }}</a>
+    </div>
+
+    <div>
+        <!--
+        If you don't like embedding JS in HTML like this you could instead subclass `DynamicFrame`
+        and add your custom logic in there:
+        ```js
+        class PostDynamicFrame extends DynamicFrame {
+            delete() {
+                this.loadUrl('/frames/post/delete/{{ post.id }}', 'delete');
+            }
+        }
+        ```
+
+        Then your button would look like this:
+        ```html
+        <button @click="delete">Delete</button>
+        ```
+        -->
+        <button @click.eval="this.loadUrl('/frames/post/edit/{{ post.id }}')">Edit</button>
+        <button @click.eval="this.loadUrl(`/frames/post/delete/{{ post.id }}`, 'delete')">Delete</button>
+    </div>
+</div>
